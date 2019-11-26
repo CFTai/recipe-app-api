@@ -8,7 +8,7 @@ from rest_framework import status
 CREATE_USER_URL = reverse('user:create')
 
 def create_user(**param):
-    return get_user_model().object.create_user(**param)
+    return get_user_model().objects.create_user(**param)
 
 class PublicUserApiTest(TestCase):
     def setUp(self):
